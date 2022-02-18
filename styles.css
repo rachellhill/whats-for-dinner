@@ -102,6 +102,10 @@ span {
   background-color: #0fa8b9;
 }
 
+.hidden {
+  display: none;
+}
+
 /* font-family: 'Roboto', sans-serif;
 
 COLORS
