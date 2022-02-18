@@ -1,6 +1,6 @@
-/* * {
+* {
   border: solid 5px yellow;
-} */
+}
 
 nav {
   max-width: auto;
@@ -41,6 +41,16 @@ body {
   flex-direction: column;
 }
 
+.form-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20pt;
+  padding-top: 35px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
 .box-2 {
   background-color: rgba(225, 225, 225, .9);
   display: flex;
@@ -51,14 +61,16 @@ body {
   align-items: center;
 }
 
-.form-header {
+.meal-display-container {
   font-family: 'Roboto', sans-serif;
-  font-size: 20pt;
-  padding-top: 35px;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-title-display {
+  font-style: italic;
+  display: flex;
+  justify-content: center;
 }
 
 form {
