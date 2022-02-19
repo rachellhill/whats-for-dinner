@@ -7,17 +7,16 @@ var desserts = ["Apple Pie","Lemon Meringue Pie","Black Forest Cake","Banana Bre
 
 // Variables:
 var letsCookButton = document.querySelector('#lets-cook');
-var sideButton = document.querySelector('input[id="side"]');
-var mainButton = document.querySelector('input[id="main-dish"]');
-var dessertButton = document.querySelector('input[id="dessert"]');
-var entireMealButton = document.querySelector('input[id="entire-meal"]');
 var displayBox = document.querySelector('.box-2');
 var mealDisplayTitle = document.querySelector('#meal-title-text');
+var mealResult = document.querySelector('.meal-result');
 var cookPotImg = document.querySelector('.img');
+var clearButton = document.querySelector('#clear');
 
 // event listeners:
 
 letsCookButton.addEventListener('click', displayRecipe);
+clearButton.addEventListener('click', showCookPot);
 
 // functions:
 function getRandomElement(array) {
@@ -29,26 +28,32 @@ function getRecipe() {
   if (type) {
     hideCookPot();
     if (type === 'sides') {
-      return getRandomElement(sides);
+      return `${getRandomElement(sides)};`
     } else if (type === 'mains') {
-      return getRandomElement(mains);
+      return `${getRandomElement(mains)}!`;
     } else if (type === 'desserts') {
-      return getRandomElement(desserts);
+      return `${getRandomElement(desserts)}!`;
+    } else if (type === 'Entire Meal') {
+      return `${getRandomElement(mains)} with a side of ${getRandomElement(sides)} and ${getRandomElement(desserts)} for dessert!`
     }
   }
 }
 
 function hideCookPot() {
   cookPotImg.classList.add('hidden');
+  mealResult.classList.remove('hidden');
   mealDisplayTitle.classList.remove('hidden');
+  clearButton.classList.remove('hidden');
 }
 
 function showCookPot() {
   cookPotImg.classList.remove('hidden');
+  mealResult.classList.add('hidden');
   mealDisplayTitle.classList.add('hidden');
+  clearButton.classList.add('hidden');
 }
 
 function displayRecipe() {
   event.preventDefault();
-  mealDisplayTitle.innerText = getRecipe();
+  mealResult.innerText = getRecipe();
 }
