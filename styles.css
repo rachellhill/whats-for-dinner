@@ -1,6 +1,6 @@
-* {
+/* * {
   border: solid 5px yellow;
-}
+} */
 
 nav {
   max-width: auto;
@@ -65,12 +65,16 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .meal-title-display {
   font-style: italic;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 form {

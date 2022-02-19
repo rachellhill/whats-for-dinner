@@ -28,11 +28,13 @@ function getRecipe() {
   if (type) {
     hideCookPot();
     if (type === 'sides') {
-      return getRandomElement(sides);
+      return `${getRandomElement(sides)};`
     } else if (type === 'mains') {
-      return getRandomElement(mains);
+      return `${getRandomElement(mains)}!`;
     } else if (type === 'desserts') {
-      return getRandomElement(desserts);
+      return `${getRandomElement(desserts)}!`;
+    } else if (type === 'Entire Meal') {
+      return `${getRandomElement(mains)} with a side of ${getRandomElement(sides)} and ${getRandomElement(desserts)} for dessert!`
     }
   }
 }
