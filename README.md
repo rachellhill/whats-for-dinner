@@ -1,23 +1,39 @@
 # What's for Dinner?
 
+## Contributors
+
+[Rachel Hill](https://github.com/rachellhill)
+
+## Technologies Used
+
+- Github VCS
+- HTML
+- CSS
+- JavaScript
+
 ## Overview
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+What's for dinner?
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+The goal of this project was strengthen my understanding of writing Javascript code, utilize the DOM in order to manipulate html and css, and dabble in creating an app that is fully functional. This is an app that generates random sides, main dishes, desserts, and entire meals!
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
+## Installation Steps
 
-## Learning Goals
+1. Click this [LINK](https://rachellhill.github.io/whats-for-dinner/) to view and navigate this app in the browser
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+### OR
 
-## Setup
+1. Clone down this [repository](https://github.com/rachellhill/whats-for-dinner/blob/main/README.md) in your terminal
+2. `cd` into the `whats-for-dinner`directory
+3. Run `open index.html` to view and navigate this app in the browser
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+## User Instructions
+1. On the main page, you have options to select what you're looking to make for dinner using the survey to select which type of meal or an entire meal.
+
+![alt screenshot of homepage](https://frontend.turing.edu/projects/module-1/assets/dinner/dinner_2.png)
+
+2. Once you click the button LETS COOK, new text appears on the right with a food option to make! If you are not pleased with the option presented, click LETS COOK button again and you will see a new option appear.
+3. If you'd like to reselect, simply click the CLEAR button to select a new dish option.
+
+### For Instructors
+[Here](https://frontend.turing.edu/projects/module-1/dinner.html) is the project spec! 
